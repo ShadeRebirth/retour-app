@@ -1,3 +1,5 @@
+import CheckoutButton from "./components/CheckoutButton";
+
 export default function Home() {
   return (
     <main className="min-h-screen flex flex-col">
@@ -11,12 +13,9 @@ export default function Home() {
           repassera jamais commande — non pas parce qu&apos;il est déçu,
           mais parce que personne ne l&apos;a relancé au bon moment.
         </p>
-        <a
-          href="#commencer"
-          className="mt-4 inline-block bg-ochre text-forest font-sans font-semibold text-lg px-8 py-4 rounded-sm w-full sm:w-auto"
-        >
-          Envoyer mon premier rappel
-        </a>
+        <div className="mt-4 flex justify-center">
+          <CheckoutButton label="Envoyer mon premier rappel" />
+        </div>
         <p className="text-ivory/50 text-sm">25€/mois. Sans engagement.</p>
       </section>
 
@@ -60,15 +59,9 @@ export default function Home() {
         <h2 className="font-display text-3xl mb-4">
           Faites revenir votre prochain client
         </h2>
-        <a
-          href="#"
-          className="inline-block bg-ochre text-forest font-sans font-semibold text-lg px-8 py-4 rounded-sm w-full sm:w-auto max-w-xs"
-        >
-          Commencer — 25€/mois
-        </a>
-        <p className="text-ivory/40 text-sm mt-3">
-          Paiement bientôt disponible sur cette page.
-        </p>
+        <div className="flex justify-center">
+          <CheckoutButton label="Commencer — 25€/mois" />
+        </div>
       </section>
 
       {/* Footer */}
